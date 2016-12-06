@@ -8,15 +8,15 @@ import static org.junit.Assert.assertThat;
 /**
 * Test for Calculator.
 */
-@Test
 public class CalculatorTest {
 	/**
 	* Test for main().
 	*/
+	@Test
 	public void whenExecuteMainThenPrintToConsole() {
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		System.setOut(new PrintStream(out));
 		Calculator.main(null);
-		assertThat(out.toString(), is("HelloWorld\r\n"));
+		assertThat(out.toString(), is("Hello world\r\n"));
 	}
 }
