@@ -33,7 +33,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when bigger bigger param.
+     * Test when bigger smaller param.
      */
     @Test
     public void retrieveMaxWhenFirstBigger() {
@@ -41,7 +41,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when bigger smaller param.
+     * Test when smaller bigger param.
      */
     @Test
     public void retrieveMaxWhenSecondBigger() {
