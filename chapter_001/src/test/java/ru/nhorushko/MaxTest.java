@@ -20,6 +20,11 @@ public class MaxTest {
     private final int bigger = 10;
 
     /**
+     * bigger number.
+     */
+    private final int middle = 7;
+
+    /**
      * smaller number.
      */
     private final int smaller = 5;
@@ -46,6 +51,30 @@ public class MaxTest {
     @Test
     public void retrieveMaxWhenSecondBigger() {
         assertEquals(max.retrieveMax(smaller, bigger), bigger);
+    }
+
+    /**
+     * Test when bigger smaller middle param.
+     */
+    @Test
+    public void retrieveMaxWhenFirstBiggerOverride() {
+        assertEquals(max.retrieveMax(bigger, smaller, middle), bigger);
+    }
+
+    /**
+     * Test when smaller bigger middle param.
+     */
+    @Test
+    public void retrieveMaxWhenSecondBiggerOverride() {
+        assertEquals(max.retrieveMax(smaller, bigger, middle), bigger);
+    }
+
+    /**
+     * Test when smaller middle bigger param.
+     */
+    @Test
+    public void retrieveMaxWhenThirdBiggerOverride() {
+        assertEquals(max.retrieveMax(smaller, middle, bigger), bigger);
     }
 
 }

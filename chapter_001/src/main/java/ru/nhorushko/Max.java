@@ -6,9 +6,9 @@ package ru.nhorushko;
 public class Max {
 
     /**
-     * This method retive bigger from params.
+     * This method retive bigger from two params.
      *
-     * @param first first number.
+     * @param first  first number.
      * @param second second number.
      * @return bigger number.
      */
@@ -18,5 +18,18 @@ public class Max {
         } else {
             return second;
         }
+    }
+
+    /**
+     * This method retive bigger from three params.
+     *
+     * @param first  first number.
+     * @param second second number.
+     * @param third  third number.
+     * @return bigger number.
+     */
+    public int retrieveMax(int first, int second, int third) {
+        int max = retrieveMax(first, second);
+        return retrieveMax(max, third);
     }
 }
