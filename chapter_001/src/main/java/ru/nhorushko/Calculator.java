@@ -1,14 +1,54 @@
 package ru.nhorushko;
-/**
-* Helo World class.
-*/
 
+/**
+ * this class does mathematical operations
+ * with numbers.
+ */
 public class Calculator {
-	/**
-	* print hello world in the console.
-	* @param args unused
-	*/
-	public static void main(String[] args) {
-		System.out.println("Hello world");
-	}
+    /**
+     * result of mathematical operations.
+     */
+    private double result;
+
+    /**
+     * retrieve the sum of two items.
+     * @param first first item.
+     * @param second second item.
+     */
+    public void add(double first, double second) {
+        result = first + second;
+    }
+
+    /**
+     * retrieve the difference of two items.
+     * @param first first item.
+     * @param second second item.
+     */
+    public void substruct(double first, double second) {
+        result = first - second;
+    }
+
+    /**
+     * div first and second item.
+     * @param first first item.
+     * @param second second item.
+     */
+    public void div(double first, double second) {
+        result = first / second;
+    }
+
+    /**
+     * multiple first and second item.
+     * @param first first item.
+     * @param second second item.
+     */
+    public void multiple(double first, double second) {
+        result = first * second;
+    }
+    /**
+     * @return result of mathematical operations.
+     */
+    public double getResult() {
+        return result;
+    }
 }
