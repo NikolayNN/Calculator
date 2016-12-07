@@ -15,14 +15,14 @@ public class MaxTest {
     private Max max;
 
     /**
-     * first number.
+     * bigger number.
      */
-    private final int first = 10;
+    private final int bigger = 10;
 
     /**
-     * second number.
+     * smaller number.
      */
-    private final int second = 5;
+    private final int smaller = 5;
 
     /**
      * Create instance for test.
@@ -33,19 +33,19 @@ public class MaxTest {
     }
 
     /**
-     * Test when bigger first param.
+     * Test when bigger bigger param.
      */
     @Test
     public void retrieveMaxWhenFirstBigger() {
-        assertEquals(max.retrieveMax(first, second), first);
+        assertEquals(max.retrieveMax(bigger, smaller), bigger);
     }
 
     /**
-     * Test when bigger second param.
+     * Test when bigger smaller param.
      */
     @Test
     public void retrieveMaxWhenSecondBigger() {
-        assertEquals(max.retrieveMax(second, first), first);
+        assertEquals(max.retrieveMax(smaller, bigger), bigger);
     }
 
 }
