@@ -15,6 +15,7 @@ public class TriangleTest {
     /**
      * the field contains triangle.
      */
+
     private Triangle rightTriangle;
     /**
      * the field contains straight line by three points.
@@ -41,6 +42,7 @@ public class TriangleTest {
         rightTriangle = new Triangle(a, b, c);
         wrongTriangle = new Triangle(a, b, d);
     }
+
     /**
      * The test validate calculated area.
      */
