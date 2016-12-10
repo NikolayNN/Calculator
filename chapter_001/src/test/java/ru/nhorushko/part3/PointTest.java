@@ -14,11 +14,11 @@ public class PointTest {
     /**
      * first point.
      */
-    Point a;
+    private Point a;
     /**
      * second point.
      */
-    Point b;
+    private Point b;
 
     /**
      * the method create instances for points.
