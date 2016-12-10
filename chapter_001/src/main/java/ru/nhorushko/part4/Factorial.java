@@ -5,20 +5,20 @@ package ru.nhorushko.part4;
  */
 public class Factorial {
     /**
-     * The method retrieve factorial from {@param parameter}.
-     * If can't retrieve factorial {@throws RuntimeException}.
-     *
+     * The method retrieve factorial with size {@param size}.
+     * @param size factorial size
      * @return factorial
+     * @throws RuntimeException if can't retrieve factorial
      */
-    public int retrieveFactorial(int parameter) throws RuntimeException {
-        if (parameter == 0) {
+    public int retrieveFactorial(int size) throws RuntimeException {
+        if (size == 0) {
             return 1;
         }
-        if (parameter < 0) {
+        if (size < 0) {
             throw new RuntimeException("can't retrieve factorial from negative number.");
         }
         int result = 1;
-        for (int i = 1; i <= parameter; i++) {
+        for (int i = 1; i <= size; i++) {
             result *= i;
         }
         return result;
