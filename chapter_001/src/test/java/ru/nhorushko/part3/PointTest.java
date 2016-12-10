@@ -26,8 +26,12 @@ public class PointTest {
      */
     @Before
     public void setup() {
-        a = new Point(0, 10);
-        b = new Point(20, 30);
+        final double xCoordinateA = 0;
+        final double yCoordinateA = 10;
+        final double xCoordinateB = 20;
+        final double yCoordinateB = 30;
+        a = new Point(xCoordinateA, yCoordinateA);
+        b = new Point(xCoordinateB, yCoordinateB);
     }
 
     /**
@@ -35,7 +39,9 @@ public class PointTest {
      */
     @Test
     public void distanceTo() {
-        assertThat(a.distanceTo(b), is(closeTo(28.2842, 0.0001)));
+        final double expectedDistance = 28.2842;
+        final double admissibleError = 0.0001;
+        assertThat(a.distanceTo(b), is(closeTo(expectedDistance, admissibleError)));
     }
 
 }
