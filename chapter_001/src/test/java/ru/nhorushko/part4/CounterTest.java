@@ -2,9 +2,9 @@ package ru.nhorushko.part4;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.nhorushko.part4.Counter;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 
 /**
  * The class contains tests for Counter class.
@@ -19,7 +19,7 @@ public class CounterTest {
      * Create instance for test.
      */
     @Before
-    public void setup(){
+    public void setup() {
         counter = new Counter();
     }
 
@@ -28,7 +28,7 @@ public class CounterTest {
      */
     @Test
     public void add() {
-        assertEquals(30, counter.add(1,10));
+        assertEquals(30, counter.add(1, 10));
     }
 
 }
