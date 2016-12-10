@@ -7,7 +7,9 @@ package ru.nhorushko.part4;
 public class Counter {
     /**
      * the method is for summing
-     * even numbs between {@param start} and {@param finish}.
+     * even numbs between two numbers
+     * @param start start number
+     * @param finish finish number
      * @return sum of even numbs
      */
     public int add(int start, int finish) {

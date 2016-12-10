@@ -9,15 +9,15 @@ public class Triangle {
     /**
      * first corner of a triangle.
      */
-    public Point a;
+    private Point a;
     /**
      * second corner of a triangle.
      */
-    public Point b;
+    private Point b;
     /**
      * third corner of a triangle.
      */
-    public Point c;
+    private Point c;
 
     /**
      * The constructor create triangle by three points.
