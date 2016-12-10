@@ -3,7 +3,6 @@ package ru.nhorushko.part2;
 import org.hamcrest.number.IsCloseTo;
 import org.junit.Before;
 import org.junit.Test;
-import ru.nhorushko.part2.Calculator;
 
 /**
  * Test for Calculator.
@@ -13,12 +12,14 @@ public class CalculatorTest {
      * Instance for use in the test.
      */
     private Calculator calculator;
+
     /**
-     * first number.
+     * First number.
      */
     private final double first = 10;
+
     /**
-     * second number.
+     * Second number.
      */
     private final double second = 2;
 
@@ -31,7 +32,7 @@ public class CalculatorTest {
     }
 
     /**
-     * test add of two numbers.
+     * Test add of two numbers.
      */
     @Test
     public void add() {
@@ -41,7 +42,7 @@ public class CalculatorTest {
     }
 
     /**
-     * test substruct of two numbers.
+     * Test substruct two numbers.
      */
     @Test
     public void substruct() {
@@ -51,7 +52,7 @@ public class CalculatorTest {
     }
 
     /**
-     * test div of two numbers.
+     * Test div two numbers.
      */
     @Test
     public void div() {
@@ -61,7 +62,7 @@ public class CalculatorTest {
     }
 
     /**
-     * test multiple of two numbers.
+     * Test multiple two numbers.
      */
     @Test
     public void multiple() {
