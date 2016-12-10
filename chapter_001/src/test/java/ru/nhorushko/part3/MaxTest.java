@@ -2,7 +2,6 @@ package ru.nhorushko.part3;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.nhorushko.part3.Max;
 
 import static org.junit.Assert.assertEquals;
 
