@@ -2,7 +2,6 @@ package ru.nhorushko.part3;
 
 import org.junit.Before;
 import org.junit.Test;
-import ru.nhorushko.part3.Point;
 
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.number.IsCloseTo.closeTo;
