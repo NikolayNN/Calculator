@@ -3,9 +3,10 @@ package ru.nhorushko.part3;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.number.IsCloseTo.closeTo;
-import static org.junit.Assert.*;
+
 
 /**
  * The class {@code PointTest} contains Tests for class {@code Point}.
