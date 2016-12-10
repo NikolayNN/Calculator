@@ -13,7 +13,8 @@ public class Calculator {
 
     /**
      * Calculate the sum of two numbers.
-     * @param first first number.
+     *
+     * @param first  first number.
      * @param second second number.
      */
     public void add(double first, double second) {
@@ -22,7 +23,8 @@ public class Calculator {
 
     /**
      * Calculate the difference of two numbers.
-     * @param first first number.
+     *
+     * @param first  first number.
      * @param second second number.
      */
     public void substruct(double first, double second) {
@@ -31,7 +33,8 @@ public class Calculator {
 
     /**
      * Divide first and second numbers.
-     * @param first first number.
+     *
+     * @param first  first number.
      * @param second second number.
      */
     public void div(double first, double second) {
@@ -40,13 +43,14 @@ public class Calculator {
 
     /**
      * Multiple first and second numbers.
-     * @param first first number.
+     *
+     * @param first  first number.
      * @param second second number.
      */
     public void multiple(double first, double second) {
         result = first * second;
     }
-    
+
     /**
      * @return result of mathematical operations.
      */
