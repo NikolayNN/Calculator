@@ -25,7 +25,7 @@ public class PointTest {
      * the method create instances for points.
      */
     @Before
-    public void setup(){
+    public void setup() {
         a = new Point(0, 10);
         b = new Point(20, 30);
     }
