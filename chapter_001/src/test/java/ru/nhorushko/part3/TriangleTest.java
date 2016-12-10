@@ -26,10 +26,18 @@ public class TriangleTest {
      */
     @Before
     public void setup() {
-        Point a = new Point(0, 10);
-        Point b = new Point(10, 20);
-        Point c = new Point(30, 10);
-        Point d = new Point(20, 30);
+        final double xCoordinateA = 0;
+        final double yCoordinateA = 10;
+        final double xCoordinateB = 10;
+        final double yCoordinateB = 20;
+        final double xCoordinateC = 30;
+        final double yCoordinateC = 10;
+        final double xCoordinateD = 20;
+        final double yCoordinateD = 30;
+        Point a = new Point(xCoordinateA, yCoordinateA);
+        Point b = new Point(xCoordinateB, yCoordinateB);
+        Point c = new Point(xCoordinateC, yCoordinateC);
+        Point d = new Point(xCoordinateD, yCoordinateD);
         rightTriangle = new Triangle(a, b, c);
         wrongTriangle = new Triangle(a, b, d);
     }
@@ -38,7 +46,9 @@ public class TriangleTest {
      */
     @Test
     public void area() {
-        assertThat(rightTriangle.area(), is(closeTo(149.9999, 0.0001)));
+        final double expectedArea = 149.9999;
+        final double admissibleError = 0.0001;
+        assertThat(rightTriangle.area(), is(closeTo(expectedArea, admissibleError)));
     }
 
     /**
