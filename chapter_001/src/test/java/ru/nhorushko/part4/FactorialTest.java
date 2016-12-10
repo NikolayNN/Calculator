@@ -27,7 +27,9 @@ public class FactorialTest {
      */
     @Test
     public void retrieveFactorial() {
-        assertEquals(120, factorial.retrieveFactorial(5));
+        final int size = 5;
+        final int expected = 120;
+        assertEquals(expected, factorial.retrieveFactorial(size));
     }
 
     /**
@@ -35,7 +37,9 @@ public class FactorialTest {
      */
     @Test
     public void retrieveFactorialFromZero() {
-        assertEquals(1, factorial.retrieveFactorial(0));
+        final int sizeZero = 0;
+        final int expected = 1;
+        assertEquals(expected, factorial.retrieveFactorial(sizeZero));
     }
 
     /**
@@ -43,7 +47,8 @@ public class FactorialTest {
      */
     @Test(expected = RuntimeException.class)
     public void retrieveFactorialFromNegativeNumber() {
-        factorial.retrieveFactorial(-10);
+        final int wrongSize = -10;
+        factorial.retrieveFactorial(wrongSize);
     }
 
 
