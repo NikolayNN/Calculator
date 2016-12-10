@@ -35,13 +35,23 @@ public class PointTest {
     }
 
     /**
-     * The Test is validity calculated distance between points.
+     * The Test is validity calculated distance between two points.
      */
     @Test
-    public void distanceTo() {
+    public void distanceToOtherPoint() {
         final double expectedDistance = 28.2842;
         final double admissibleError = 0.0001;
         assertThat(a.distanceTo(b), is(closeTo(expectedDistance, admissibleError)));
+    }
+
+    /**
+     * The Test is validity calculated distance between one point.
+     */
+    @Test
+    public void distanceToTheSamePoint() {
+        final double expectedDistance = 0;
+        final double admissibleError = 0.0001;
+        assertThat(a.distanceTo(a), is(closeTo(expectedDistance, admissibleError)));
     }
 
 }
