@@ -22,7 +22,7 @@ public class Paint {
         height = Math.abs(height);
         StringBuilder pyramide = new StringBuilder();
         for (int level = 1; level <= height; level++) {
-            drawLevel(pyramide, level, height);
+            drawPyramidLevel(pyramide, level, height);
         }
         return pyramide.toString();
     }
@@ -33,7 +33,7 @@ public class Paint {
      * @param level current level
      * @param height pyramid height
      */
-    private void drawLevel(StringBuilder pyramide, int level, int height) {
+    private void drawPyramidLevel(StringBuilder pyramide, int level, int height) {
         addSpaces(pyramide, level, height);
         addPyramidElements(pyramide, level);
         pyramide.append("\n");
