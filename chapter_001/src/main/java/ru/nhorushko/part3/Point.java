@@ -1,6 +1,4 @@
-package ru.nhorushko;
-
-import java.util.ArrayList;
+package ru.nhorushko.part3;
 
 /**
  * The class {@code Point} contains methods for calculate

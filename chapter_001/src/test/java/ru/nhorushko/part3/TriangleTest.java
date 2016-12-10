@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part3;
 
 import org.junit.Before;
 import org.junit.Test;

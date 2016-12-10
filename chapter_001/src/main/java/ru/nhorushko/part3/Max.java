@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part3;
 
 /**
  * Created by Nikolay on 12/7/2016.

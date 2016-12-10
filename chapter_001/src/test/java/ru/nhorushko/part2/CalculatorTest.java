@@ -1,8 +1,9 @@
-package ru.nhorushko;
+package ru.nhorushko.part2;
 
 import org.hamcrest.number.IsCloseTo;
 import org.junit.Before;
 import org.junit.Test;
+import ru.nhorushko.part2.Calculator;
 
 /**
  * Test for Calculator.

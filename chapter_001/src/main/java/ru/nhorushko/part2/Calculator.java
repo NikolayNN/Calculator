@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part2;
 
 /**
  * this class does mathematical operations

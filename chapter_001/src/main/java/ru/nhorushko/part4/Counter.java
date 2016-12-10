@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part4;
 
 /**
  * This class contains method for summing

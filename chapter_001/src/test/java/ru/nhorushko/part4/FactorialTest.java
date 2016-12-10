@@ -1,7 +1,8 @@
-package ru.nhorushko;
+package ru.nhorushko.part4;
 
 import org.junit.Before;
 import org.junit.Test;
+import ru.nhorushko.part4.Factorial;
 
 import static org.junit.Assert.*;
 

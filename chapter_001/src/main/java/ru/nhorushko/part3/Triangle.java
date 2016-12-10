@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part3;
 
 /**
  * The class {@code Triangle} contains methods for calculate

@@ -1,4 +1,4 @@
-package ru.nhorushko;
+package ru.nhorushko.part4;
 
 /**
  * The class contains method for retrieve factorial.
