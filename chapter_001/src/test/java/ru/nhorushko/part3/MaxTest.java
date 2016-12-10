@@ -20,7 +20,7 @@ public class MaxTest {
     private final int bigger = 10;
 
     /**
-     * bigger number.
+     * middle number.
      */
     private final int middle = 7;
 
@@ -38,7 +38,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when bigger smaller param.
+     * Test when parameter order: bigger, smaller.
      */
     @Test
     public void retrieveMaxWhenFirstBigger() {
@@ -46,7 +46,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when smaller bigger param.
+     * Test when parameter order: smaller, bigger.
      */
     @Test
     public void retrieveMaxWhenSecondBigger() {
@@ -54,7 +54,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when bigger smaller middle param.
+     * Test when parameter order: bigger, smaller, middle.
      */
     @Test
     public void retrieveMaxWhenFirstBiggerOverride() {
@@ -62,7 +62,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when smaller bigger middle param.
+     * Test when parameter order: smaller, bigger, middle.
      */
     @Test
     public void retrieveMaxWhenSecondBiggerOverride() {
@@ -70,7 +70,7 @@ public class MaxTest {
     }
 
     /**
-     * Test when smaller middle bigger param.
+     * Test when parameter order: smaller, middle, bigger.
      */
     @Test
     public void retrieveMaxWhenThirdBiggerOverride() {
