@@ -10,12 +10,12 @@ public class Point {
      * The {@code double} value that is horizontal
      * coordinate of the point.
      */
-    public double x;
+    private double x;
     /**
      * The {@code double} value that is vertical
      * coordinate of the point.
      */
-    public double y;
+    private double y;
 
 
     /**
@@ -30,6 +30,7 @@ public class Point {
 
     /**
      * Calculate distance between this Point and {@param point}.
+     * @param point second point.
      * @return distance between points.
      */
     public double distanceTo(Point point) {
