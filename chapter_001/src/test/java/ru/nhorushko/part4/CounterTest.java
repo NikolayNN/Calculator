@@ -28,7 +28,10 @@ public class CounterTest {
      */
     @Test
     public void add() {
-        assertEquals(30, counter.add(1, 10));
+        final int start = 1;
+        final int finish = 10;
+        final int expectedValue = 30;
+        assertEquals(expectedValue, counter.add(start, finish));
     }
 
 }
