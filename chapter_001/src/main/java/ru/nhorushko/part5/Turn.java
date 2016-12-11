@@ -1,7 +1,5 @@
 package ru.nhorushko.part5;
 
-import java.util.Arrays;
-
 /**
  * The class contain method fo turn back array.
  */
@@ -29,11 +27,12 @@ public class Turn {
 
     /**
      * The method turn array. If array not full fill. Then array fill with zero.
+     *
      * @param array array
      * @return turned array
      */
-    public int[][] turnArray(int[][] array){
-        if (array == null){
+    public int[][] turnArray(int[][] array) {
+        if (array == null) {
             int[][] emptyArray = {};
             return emptyArray;
         }
@@ -42,7 +41,7 @@ public class Turn {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 int y = j;
-                int x = turnedArray[y].length-i-1;
+                int x = turnedArray[y].length - i - 1;
                 turnedArray[y][x] = array[i][j];
             }
         }
@@ -51,13 +50,14 @@ public class Turn {
 
     /**
      * The method search max length.
+     *
      * @param array array
      * @return max lenght
      */
     private int findMaxLength(int[][] array) {
         int maxLenght = 0;
         for (int[] ints : array) {
-            if (maxLenght < ints.length){
+            if (maxLenght < ints.length) {
                 maxLenght = ints.length;
             }
         }
