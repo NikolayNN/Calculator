@@ -20,6 +20,7 @@ public class ArrayUtils {
         }
         String[] result = new String[array.length];
         int elementCounter = 0;
+
         for (String str : array) {
             if (isUnique(result, str)) {
                 result[elementCounter++] = str;
