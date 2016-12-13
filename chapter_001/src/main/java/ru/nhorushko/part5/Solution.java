@@ -21,14 +21,12 @@ public class Solution {
                 result[resultArrayIndex++] = secondArray[secondArrayIndex++];
             }
         }
-
         while (firstArrayIndex < firstArray.length){
             result[resultArrayIndex++] = firstArray[firstArrayIndex++];
         }
         while (secondArrayIndex < secondArray.length){
             result[resultArrayIndex++] = secondArray[secondArrayIndex++];
         }
-
         return result;
     }
 }
